@@ -1,0 +1,14 @@
+<view class="section tc">
+  <video 
+    class="video-common" 
+    src="{{src}}"  
+    poster="{{poster}}"
+    controls
+  ></video>
+
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+  </view>
+</view>
+
+

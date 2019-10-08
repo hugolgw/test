@@ -1,0 +1,35 @@
+<view class="swiper-tab">
+    <view 
+      wx:for="{{tabs}}" 
+      wx:key="{{index}}"
+      class="swiper-tab-item {{currentTab == index ? 'active' : '' }}" 
+      data-current="{{index}}"
+      bindtap="clickTab"
+    >{{item.text}}</view>
+</view>
+
+<view class="swiper-container">
+  <swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+    <swiper-item wx:for="{{tabs}}" wx:key="{{index}}">
+      <scroll-view  class="scroll-container" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" >
+        <view class="empty"></view>
+        <block wx:for="{{item.data}}" wx:for-item="spaceData" wx:for-index="spaceIndex"  wx:key="{{spaceIndex}}">
+          <B-card space-data="{{spaceData}}"></B-card>
+          <!-- <B-banner wx:if="{{spaceData.component === 'B-banner'}}" space-data="{{spaceData}}"></B-banner> -->
+        </block>
+        <!-- <B-card wx:for="{{item.data}}" wx:for-item="cardData" wx:for-index="cardIndex" wx:key="{{cardIndex}}" space-data="{{cardData}}"></B-card> -->
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+        <scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" >
+          <B-video></B-video>
+          <B-video></B-video>
+          <B-video></B-video>
+          <B-video></B-video>
+          <B-video></B-video>
+        </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
+
+

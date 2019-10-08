@@ -1,0 +1,29 @@
+<view class="b-card">
+  <view class="b-card-top">
+    <view class="b-card-top-l b-fc">
+      <image class="b-icon-hot" src="../../images/icon-hot.png"></image>
+      <text>Bob热板</text>
+    </view>
+    <view class="b-card-top-r b-fc">
+      <text>查看更多</text>
+      <image class="b-icon-right" src="../../images/icon-right.png"></image>
+    </view>
+  </view>
+  <image class="b-card-img" src="{{spaceData.bannerUrl}}"></image>
+  <view class="b-card-bottom">
+      <view class="b-card-title line2">{{spaceData.title}}</view>
+      <view class="b-card-tag">
+        <view class="b-tag">{{spaceData.type}}</view>
+        <view class="b-goods-share b-fc" >
+          <view class="b-goods b-fc">
+              <image class="b-icon-hot" src="../../images/icon-good.png"></image>
+              <text wx:if="{{spaceData.good}}">{{spaceData.good}}</text>
+          </view>
+          <view class="b-share b-fc">
+              <image class="b-icon-hot" src="../../images/icon-share.png"></image>
+              <text>{{spaceData.share}}</text>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+/**index.wxss**/
+
+.section {
+    width: 100%;
+    position: relative;
+}
+
+.video-common {
+    width: 100%;
+    max-height: 428rpx;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

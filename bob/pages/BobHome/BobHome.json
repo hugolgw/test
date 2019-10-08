@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "B-video": "../../components/Bvideo/Bvideo",
+        "B-card": "../../components/Bcard/Bcard",
+        "B-banner": "../../components/Bbanner/Bcard"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "pages": [
+        "pages/BobHome/BobHome",
+        "pages/BobVideo/BobVideo",
+        "pages/BobUser/BobUser"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "BOB资讯",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#d81e06",
+        "borderStyle": "black",
+        "backgroundColor": "#fff",
+        "list": [{
+            "pagePath": "pages/BobHome/BobHome",
+            "text": "资讯",
+            "iconPath": "images/icon-news.png",
+            "selectedIconPath": "images/icon-news-selected.png"
+        }, {
+            "pagePath": "pages/BobVideo/BobVideo",
+            "text": "视频",
+            "iconPath": "images/icon-video.png",
+            "selectedIconPath": "images/icon-video-selected.png"
+        }, {
+            "pagePath": "pages/BobUser/BobUser",
+            "text": "我的",
+            "iconPath": "images/icon-user.png",
+            "selectedIconPath": "images/icon-user-selected.png"
+        }]
+    },
+    "sitemapLocation": "sitemap.json"
+}
